@@ -62,7 +62,7 @@ public class Main {
         for (String listItem : strings) {
             stringMap.put(
                     listItem,
-                    stringMap.containsKey(listItem) ? stringMap.get(listItem) + 1 : 1
+                    Integer.valueOf(stringMap.containsKey(listItem) ? stringMap.get(listItem) + 1 : 1)
             );
         }
         for (Map.Entry<String, Integer> entry : stringMap.entrySet()) {
